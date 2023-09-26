@@ -1,0 +1,797 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display&family=Poppins:ital,wght@0,100;0,200;0,600;0,900;1,100;1,200&family=Roboto+Slab:wght@300&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Montserrat"," roboto slab",sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.all{
+    width: 100%;
+    color: white;
+    position: relative;
+
+}
+h1,h2,h3,h4,h5{
+    text-align: center;
+}
+.landing-page{
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5vmin 5vmin;
+
+}
+.header-left,
+.header-right a{
+    font-size: 3vmin;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+.Catagory{
+    position: fixed;
+    top: 10%;
+    left: 0;
+    height: 40%;
+    width: 30vmin;
+    border: solid 1px white;
+    transform: translateX(-30vmin);
+    transition: all 1s ease;
+
+}
+.Catagory ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vmin;
+    padding-top: 4vmin;
+    list-style: none;
+
+}
+.Catagory ul li{
+    padding: 0 2vmin;
+}
+.Catagory ul li a{
+    font-size: 2.8vmin;
+    padding: 0 2vmin;
+    text-decoration: none;
+    color: white;
+}
+.Catagory ul li:hover{
+    background-color: rgb(0, 0, 0);
+}
+.Catagory ul li a:hover{
+    color: white;
+}
+.topImage{
+    height: 60vh;
+    width: inherit;
+    background-image: url(https://cdn.pixabay.com/photo/2020/03/12/07/32/bike-4924198_1280.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.topImage2{
+    height: 60vh;
+    width: inherit;
+    background-image: url(https://cdn.pixabay.com/photo/2019/02/25/16/40/road-4020004_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: all 1s ease;
+}
+.topImage3{
+    height: 60vh;
+    width: inherit;
+    background-image: url(https://autodeals.pk/blog/wp-content/uploads/2022/11/Heavy-Bikes-Banned-on-Motorways-by-Supreme-Court-750x363.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: all 1s ease;
+}
+.landing-page .bottom{
+    height: 40vh;
+    width: inherit;
+}
+#topImg{
+    position: relative;
+    height: 60vh;
+    width: inherit;
+}
+.header-menu-bar{
+    height: 8vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 150;
+    visibility: hidden;
+    background-color: black;
+}
+.header-menu-bar-left{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 10px;
+    
+}
+.header-menu-bar-left ul{
+    position: absolute;
+    top: 100%;
+    border: 1px solid white;
+    height: 30vh;
+    width: 150px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    padding-top: 2vmin;
+    transform: translateX(-200px);
+    transition: all 1s ease;
+}
+.header-menu-bar-left ul li{
+    cursor: pointer;
+    width: 100%;
+    padding-left: 2vmin;
+}
+.header-menu-bar-left ul li:hover{
+    background-color: black;
+}
+.header-menu-bar-left ul li{
+    text-decoration: none;
+    color: aqua;
+    font-size: 2.5vmin;
+    font-weight: 700;
+}
+.header-menu-bar-left svg{
+    fill: white;
+    height: 4vmin;
+    cursor: pointer;
+
+}
+.header-menu-bar-middle{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+.header-menu-bar-middle ul{
+    display: flex;
+    list-style: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    padding: 0 10px;
+
+}
+.header-menu-bar-middle ul li{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.header-menu-bar-middle ul li{
+    color: white;
+    text-decoration: none;
+    font-size: 2.5vmin;
+    
+}
+.header-menu-bar-middle ul li:hover{
+
+    text-decoration: underline 3px orange;
+    text-underline-offset: 20px ;
+}
+.header-menu-bar-right{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    column-gap: 3vmin;
+    position: relative;
+    justify-content: end;
+    padding-right: 10vmin;
+}
+.profile{
+    height: 8vmin;
+    width: 8vmin;
+    border-radius: 50px;
+    overflow: hidden;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    
+}
+.pro{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+}
+.pro h4{
+    font-size: 2.5vmin;
+    color: white;
+}
+.pro svg{
+    height: 20px;
+    fill: white;
+}
+.profile img{
+    height: 100%;
+    width: 100%;
+
+}
+.bottom{
+    display: flex;
+}
+.bottom p{
+    padding: 0 5vmin;
+    font-size: 2.4vmin;
+    line-height: 2vmin;
+    padding-top: 2vmin;
+
+}
+.bottom h2{
+    padding-top: 2vmin;
+}
+.bottom .left{
+    height: inherit;
+    width: 50vw;
+    background-image: url(Images/bike1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.bottom .right{
+    height: inherit;
+    width: 50vw;
+    background-image: url(Images/bike2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.page{
+    min-height: 100vh;
+    min-width: 100vw;
+    transform: translateY(250px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.page .top{
+    height: 60vh;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+.heading-text{
+    opacity: 0;
+    transition: all 2s ease;
+}
+.page .top h2{
+    width: 100%;
+    font-size: 4vmin;
+}
+.images{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2vmin;
+}
+/* images */
+.page .image1{
+    height: 50vh;
+    width: 90vh;
+    background-image: url(Images/bike3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.page .image2{
+    height: 50vh;
+    width: 90vh;
+    background-image: url(Images/bike4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.page .image3{
+    height: 50vh;
+    width: 90vh;
+    background-image: url(Images/bike5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.page .image4{
+    height: 50vh;
+    width: 90vh;
+    background-image: url(Images/bike6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.page .image5{
+    height: 50vh;
+    width: 90vh;
+    background-image: url(Images/bike9.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.page .image6{
+    height: 50vh;
+    width: 90vh;
+    background-image: url(Images/bike8.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.page .image7{
+    height: 50vh;
+    width: 90vh;
+    background-image: url(Images/bike10.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.page .image8{
+    height: 50vh;
+    width: 90vh;
+    background-image: url(Images/bike11.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.page .image9{
+    height: 50vh;
+    width: 90vh;
+    background-image: url(Images/bike12.jpg);
+    background-position: 50% 80%;
+    background-size: cover;
+}
+.page .image10{
+    height: 50vh;
+    width: 90vh;
+    background-image: url(Images/bike6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.page .image11{
+    height: 50vh;
+    width: 90vh;
+    background-image: url(Images/bike3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.page .image12{
+    height: 50vh;
+    width: 90vh;
+    background-image: url(Images/bike4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* images */
+.page .bottom{
+    height: 40vh;
+    width: inherit;
+    display: flex;
+    row-gap: 1.5vmin;
+    flex-direction: column;
+
+}
+.page .bottom button{
+    width: 20vmin;
+    height: 5vh;
+    margin-left: 45vw;
+    background-color: rgb(83, 217, 250);
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-weight: 900;
+    font-size: 2.5vmin;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgb(155, 154, 154);
+}
+.page .bottom button:hover{
+    background: linear-gradient(rgb(0, 162, 255), rgb(3, 113, 187), blue);
+    transition: all 1s ease;
+}
+.page .bottom button:active{
+    background-color: rgb(255, 0, 0);
+    opacity: 50%;
+}
+.page .bottom p{
+    font-size: 3vmin;
+    line-height: 2.5vmin;
+    padding: 0 20vmin;
+}
+.page .bottom h3{
+    
+}
+.page .bottom h4{
+
+}
+
+/* last-bottom-start*/
+.last-bottom{
+    height: 40vh;
+    width: 100%;
+}
+.last-bottom .top{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.last-bottom .top h2{
+    border-top: 1px solid white;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    padding-top: 1.5vmin;
+}
+.text-botttom-div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.text-left{
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid white;
+    
+}
+.text-left h3{
+    padding-top: 1vmin;
+}
+.text-left ul{
+    list-style: none;
+    display: flex;
+    padding: 1vmin 20vmin;
+    flex-direction: column;
+}
+.text-left ul li{
+    display: flex;
+    font-size: 2vmin;
+}
+.text-left ul li a{
+    text-decoration: none;
+    color: rgb(157, 247, 247);
+    padding-left: .5vmin;
+}
+
+
+.text-right{
+    width: 50%;
+    height: 100%;
+}
+.text-right ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: .5vmin;
+    padding-left: 10vmin;
+}
+.text-right ul li{
+    display: flex;
+    font-size: 2vmin
+}
+
+.last-bottom .bottom{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.last-bottom .bottom ul{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+    
+}
+.last-bottom .bottom ul li a svg{
+    height: 4vmin;
+    fill: rgb(0, 247, 255);
+}
+/* last-bottom-end */
+
+
+
+/* profile-start */
+.profile-side-bar{
+    position: fixed;
+    height: 50vh;
+    width: 250px;
+    background-color: white;
+    right: 0%;
+    top: 8%;
+    transform: translateX(250px);
+    transition: all .5s ease;
+    padding-top: 3vmin;
+}
+.profImage{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profImage img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.bio{
+  width: 100%;
+  margin-top: 5px;
+  text-align: center;
+
+}
+
+.bio h5{
+    color: black;
+}
+
+.biodata ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5vmin;
+   padding: 2vmin 5vmin;
+    width: 100%;
+
+}
+.biodata ul li{
+    color: black;
+    font-size: 1.7vmin;
+    font-weight: 700;
+    width: 100%;
+}
+.biodata ul li:hover{
+    background-color: aqua;
+}
+/* profile-end */
+
+/* duke-start */
+.duke,
+.pulsar,
+.yahama,
+.suzuki{
+    position: fixed;
+    height: 40vh;
+    width: 60vw;
+    background-color: white;
+    top: 8vh;
+    left: 20%;
+    right: 20%;
+    display: none;
+}
+.bikeCatagory1,
+.bikeCatagory2{
+    height: 20vh;
+    width:inherit;
+    display: flex;
+    align-items: center;
+
+}
+.bikeCatagory1 ul,
+.bikeCatagory2 ul{
+    list-style: none;
+    height: 15vh;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.bikeCatagory1 ul li,
+.bikeCatagory2 ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bikeCatagory1 ul li img,
+.bikeCatagory2 ul li img{
+    height: 12vh;
+    width: 10vw;
+    cursor: pointer;
+}
+/* duke-end
+
+
+
+
+
+
+
+
+
+/* responsive */
+@media (max-width:600px) {
+
+    .images{
+        flex-direction: column;
+        row-gap: 2vmin;
+
+
+    }
+    .page .image1,
+    .page .image2,
+    .page .image3,
+    .page .image4,
+    .page .image5,
+    .page .image6,
+    .page .image7,
+    .page .image8,
+    .page .image9,
+    .page .image10,
+    .page .image11,
+    .page .image12{
+        height: 30vh;
+        width: 90vw;
+    }
+    .page .bottom{
+        padding-top: 5vmin;
+    }
+    .page .bottom button{
+        margin-left: 40vw;
+    }
+
+    .last-bottom{
+        height: 30vh;
+    }
+    .last-bottom .top{
+        height: 20vh;
+    }
+    .last-bottom .top h2{
+        font-size: 2.5vmin;
+
+    }
+    .text-left h3,
+    .text-right h3{
+        font-size: 2.5vmin;
+    }
+    .text-left ul{
+
+        padding: 1vmin 10vmin;
+    }
+    .Catagory{
+        height: 30%;
+        width: 30vmin;
+    
+    }
+    .Catagory ul{
+        row-gap: 1.5vmin;
+    
+    }
+    .page .bottom p{
+        font-size: 2vmin;
+        line-height: 2.5vmin;
+        padding: 0 20vmin;
+    }
+    .header-menu-bar{
+        bottom: 0%;
+
+    }
+    .header-menu-bar-right{
+        height: 100%;
+        width: 40%;
+        
+    }
+    .profile{
+        height: 8vmin;
+        width: 8vmin;
+    }
+    .biodata ul li{
+        font-size: 2.5vmin;
+    }
+    .profile-side-bar{
+        height: 45vh;
+        width: 200px;
+
+    } 
+
+}
+@media (min-width:600px) {
+    .page{
+        margin-top: 5px;
+    }
+    .last-bottom{
+        margin-top: 4vmin;
+    }
+    .page .bottom p{
+        font-size: 1.5vmin;
+        line-height: 2.5vmin;
+        padding: 0 20vmin;
+    }
+    .profile{
+        height: 6vmin;
+        width: 6vmin;
+    }
+    .pro h4{
+        font-size: 2vmin;
+    }
+}
+@media (min-width:786px) {
+    .page{
+        margin-top: 5px;
+    }
+    .last-bottom{
+        margin-top: 4vmin;
+    }
+    .page .bottom p{
+        font-size: 2vmin;
+        line-height: 2.5vmin;
+        padding: 0 20vmin;
+    }
+    .header-menu-bar-right{
+        height: 100%;
+        width: 20%;
+        padding-left: 5vmin;
+    }
+
+}
+@media (min-width:991px) {
+    .page{
+        margin-top: 5px;
+    }
+    .last-bottom{
+        margin-top: 4vmin;
+    }
+    .page .bottom p{
+        font-size: 3vmin;
+        line-height: 2.5vmin;
+        padding: 0 20vmin;
+    }
+    .header-menu-bar-right{
+        height: 100%;
+        width: 20%;
+        padding-left: 10vmin;
+        display: flex;
+    }
+}
+@media (min-width:1200px) {
+    .page{
+        margin-top: 2px;
+    }
+    .last-bottom{
+        margin-top: 4vmin;
+    }
+    .page .bottom p{
+        font-size: 3vmin;
+        line-height: 2.5vmin;
+        padding: 0 20vmin;
+    }
+    .header-menu-bar-right{
+        height: 100%;
+        width: 20%;
+        padding-left: 10vmin;
+    }
+    
+}
+@media (min-width:2000px) {
+    .page{
+        margin-top: 50px;
+    }
+    .last-bottom{
+        margin-top: 20vmin;
+    }
+    .page .bottom p{
+        font-size: 4vmin;
+        line-height: 5vmin;
+        padding: 0 50vmin;
+    }
+    .header-menu-bar-right{
+        height: 100%;
+        width: 20%;
+        padding-left: 10vmin;
+    }
+}

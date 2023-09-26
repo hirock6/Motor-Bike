@@ -1,0 +1,166 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+  
+    width: 100%;
+
+}
+.loginAll{
+    height: 50vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middlelogin{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.login-informations{
+   height: 50vh;
+    width: 40vmin;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vmin;
+    padding-top: 1vmin;
+    position: relative;
+    border-radius: 4px;
+    margin-top: 5vmin;
+}
+.login-informations input{
+    height: 6vh;
+    width: 100%;
+    opacity: 95%;
+    font-size: 2.5vmin;
+    padding-left: 1vmin;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px rgb(83, 83, 83);
+}
+.login-informations input::placeholder{
+    color: white;
+}
+.login-informations a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.5vmin;
+    border: solid white 1px;
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px rgb(83, 83, 83);
+    border-radius: 4px;
+}
+.login-informations input:nth-child(3){
+    color:  white;
+    font-size: 2.5vmin;
+}
+.login-informations input:nth-child(3):active{
+    background-color: rgb(37, 246, 253);
+    color: black;
+    opacity: 80%;
+}
+.login-informations a:nth-child(4){
+    margin-top: 2vmin;
+}
+.login-informations a:nth-child(4):hover{
+    background-color: rgb(24, 244, 252);
+    border: none;
+    color: black;
+}
+.login-informations a:nth-child(4):active{
+    background-color: rgb(255, 251, 23);
+    opacity: 80%;
+
+}
+.login-informations a:nth-child(5):hover{
+    background-color: rgb(24, 244, 252);
+    border: none;
+    color: black;
+}
+.login-informations a:nth-child(5):active{
+    background-color: rgb(255, 251, 23);
+    opacity: 80%;
+
+}
+
+.login-informations a:nth-child(2){
+    border: none;
+}
+.login-informations a:nth-child(2):active{
+    color: red;
+    opacity: 95%;
+}
+.login-informations a:nth-child(1){
+    border: none;
+}
+.login-informations a:nth-child(1):active{
+    color: red;
+    opacity: 95%;
+}
+.btm-text{
+    display: flex;
+    justify-content: space-between;
+    height: 6vmin;
+
+}
+.btm-text a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.5vmin;
+}
+
+
+
+
+
+.textall{
+    height: 50vh;
+    width: 100%;
+    background-color: black;
+}
+.textall h2{
+    text-align: center;
+    color: white;
+}
+.textall p{
+    padding: 0 20vmin;
+    color: white;
+}
+@media (max-width:600px) {
+    .middlelogin{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btm-text{
+        width: 100%;
+        height: 50vh;
+        padding: 2vmin 5vmin;
+    }
+    .textall h2{
+        font-size: 4vmin;
+    }
+    .textall p{
+        padding: 0 10vmin;
+        font-size: 3vmin;
+    }
+}

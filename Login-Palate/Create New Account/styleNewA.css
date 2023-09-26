@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Mooli&family=Playfair+Display&family=Poppins:ital,wght@0,100;0,200;0,600;0,900;1,100;1,200&family=Roboto+Slab:wght@300&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "mooli",sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.NewacAll{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: rgb(31, 27, 27);
+    flex-direction: column;
+    align-items: center;
+}
+.NewacAll p{
+    font-size: 2vmin;
+    padding: 0 10vmin;
+    color: white;
+}
+.NewacAll h2{
+    padding: 1.5vmin 0;
+    color: white;
+}
+#formations{
+    height: 70vmin;
+    width: 50vmin;
+    background-color: rgb(75, 121, 109);
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vmin;
+    align-items: center;
+    padding-top: 3vmin;
+    margin-top: 5vmin;
+    box-shadow: 5px 5px 5px rgb(71, 71, 71);
+    border-radius: 4px;
+}
+#inpforText{
+    height: 5vmin;
+    width: 40vmin;
+    padding-left: 1vmin;
+    font-size: 2vmin;
+    
+}
+.passDiv{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.passDiv svg{
+    height: 3vmin;
+    position: absolute;
+    fill: black;
+    font-size: 2vmin;
+}
+#eyeClose{
+   display: none;
+}
+.svgDiv{
+    position: absolute;
+    padding-right: 3vmin;
+    display: flex;
+    align-items: center;
+    right: 3%;
+
+}
+#smallMenu{
+    height: 3.5vmin;
+    width: 40vmin;
+}
+.Gender{
+    display: flex;
+    flex-direction: row;
+    width: 40vmin;
+    margin-top: 1vmin;
+    column-gap: 5vmin;
+    justify-content: center;
+}
+.male,.female{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    color: white;
+    column-gap: 2vmin; 
+
+}
+.nationality{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.nationality ul{
+    list-style: none;
+    color: white;
+    position: absolute;
+    background-color:white;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    height: 15vmin;
+    z-index: 100;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.nationality ul li{
+    width: 100%;
+    padding-left: 2vmin;
+    color: black;
+    cursor: pointer;
+}
+.nationality ul li:hover{
+    background-color: aqua;
+}
+.nationality ul li:active{
+    opacity: 50%;
+    background-color: aqua;
+}
+.nationality ul::-webkit-scrollbar{
+    display: none;
+}
+.nationality svg{
+    height: 4vmin;
+    position: absolute;
+    right: 0%;
+    height: 100%;
+    padding: 0 2vmin;
+    padding-left: 33vmin;
+}
+.natiLIty{
+    display: none;
+}
+#submitId{
+    height: 5vmin;
+    width: 20vmin;
+}
+.policy{
+
+    height: 5vmin;
+    width: 40vmin;
+    display: flex;
+    column-gap: 2vmin;
+    height: 10vmin;
+    align-items: center;
+}
+.policy p{
+    font-size: 2vmin;
+}
+@media (max-width:600px) {
+    #formations{
+        height: 100vmin;
+        width: 80vmin;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1vmin;
+        align-items: center;
+        padding-top: 5vmin;
+    }
+    #inpforText{
+        height: 9vmin;
+        width: 70vmin;
+        padding-left: 1vmin;
+        font-size: 3.5vmin;
+    }
+    #smallMenu{
+        height: 6vmin;
+        width: 70vmin;
+    }
+    .policy{
+        width: 70vmin;
+    }
+    .policy p{
+        font-size: 3vmin;
+    }
+    #submitId{
+        height: 8vmin;
+        width: 30vmin;
+    }
+    .nationality svg{
+        padding-left:89.6%;
+    }
+    .passDiv svg{
+        height: 4vmin;
+    }
+}
